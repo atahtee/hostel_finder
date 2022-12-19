@@ -201,7 +201,7 @@ class _BookNowScreenState extends State<BookNowScreen> {
                       Navigator.pushReplacementNamed(
                           context, AppRouteName.lipaMpesa);
                     },
-                    child: Text('Mpesa ')),
+                    child: Text('MPESA ')),
                 trailing: Icon(Icons.arrow_forward_ios),
               ),
             )
