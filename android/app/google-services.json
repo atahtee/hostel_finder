@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "94937541703",
+    "project_id": "finding-hostel",
+    "storage_bucket": "finding-hostel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94937541703:android:99542dacb440fe182f9562",
+        "android_client_info": {
+          "package_name": "com.example.finderhostel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94937541703-3fhpv0nej99i73ebi1toiuutgchl16un.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqfCEQmdjHSWGogvCzF9m4SAv-5Ke-v8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94937541703-3fhpv0nej99i73ebi1toiuutgchl16un.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
