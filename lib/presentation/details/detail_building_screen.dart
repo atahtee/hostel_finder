@@ -28,7 +28,7 @@ class _DetailBuildingScreenState extends State<DetailBuildingScreen> {
             height: MediaQuery.of(context).size.height * 0.5,
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(32),
+              borderRadius: BorderRadius.circular(34),
               image: DecorationImage(
                 image: AssetImage(building.assets),
                 fit: BoxFit.cover,
