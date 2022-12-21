@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
   ];
   final description = [
     "Easily find affordable hostels with Hostel Finder"
-    "Hostel finder is a complete mobile application that enables you to find your next hostel easily and conveniently",
+    "Hostel finder is a complete mobile application that enables youdto find your next hostel easily and conveniently",
     "Hostel finder is a complete mobile application that helps you to find your next hostel easily",
     "Hostel finder is a complete mobile application that helps you to find your next hostel easily"
   ];
