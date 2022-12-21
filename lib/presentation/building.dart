@@ -52,7 +52,7 @@ final buildingsNearMe = [
   ),
   Building(
     assets: "assets/images/hostel_3.jpeg",
-    name: "Victory Hostels",
+    name: "Sictory Hostels",
     location: "Ngara, Nairobi",
     about:
         " When you think about conducive environment for learning, accomodation and best meals, think about Victory Hostels. Located at the heart of Ngara, expect fresh produce from the farmers that also helps our students to grow healthier",
