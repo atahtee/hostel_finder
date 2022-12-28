@@ -71,7 +71,7 @@ class BoldenCart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.red,
       
       body: Container(
         child: Container(),
