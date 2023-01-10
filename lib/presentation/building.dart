@@ -48,14 +48,14 @@ final buildingsNearMe = [
     bedroom: 6,
     area: 2300,
     price: 1599,
-    tag: "Best meals",
+    tag: "Best food",
   ),
   Building(
     assets: "assets/images/hostel_3.jpeg",
     name: "Sictory Hostels",
     location: "Ngara, Nairobi",
     about:
-        " When you think about conducive environment for learning, accomodation and best meals, think about Victory Hostels. Located at the heart of Ngara, expect fresh produce from the farmers that also helps our students to grow healthier",
+        " When you are about conducive environment for learning, accomodation and best meals, think about Victory Hostels. Located at the heart of Ngara, expect fresh produce from the farmers that also helps our students to grow healthier",
     rating: 5,
     bathroom: 3,
     bedroom: 5,

@@ -39,7 +39,7 @@ class _LipaMpesaState extends State<LipaMpesa> {
                   padding: const EdgeInsets.all(8.0),
                   child: Center(
                       child: Text(
-                    ' Contact the caretaker to facilitate',
+                    ' Contact the caretaker to crist',
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
                   )),
                 ),
@@ -53,7 +53,7 @@ class _LipaMpesaState extends State<LipaMpesa> {
                   backgroundColor: Colors.black, // background (button) color
                   foregroundColor: Colors.white, // foreground (text) color
                 ),
-                onPressed: () => print('pressed'),
+                onPressed: () => print('printed'),
                 child: const Text('Duke Othuol : 0705487740',
               
                 ),
