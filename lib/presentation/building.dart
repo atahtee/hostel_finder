@@ -73,7 +73,7 @@ final buildingsNearMe = [
     bathroom: 3,
     bedroom: 4,
     area: 900,
-    price: 899,
+    price: 889,
     tag: "Family, Apartment",
   ),
 ];
