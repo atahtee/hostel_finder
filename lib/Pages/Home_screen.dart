@@ -81,7 +81,7 @@ class HomeScreen extends StatelessWidget {
                               border: OutlineInputBorder(
                                   borderSide: BorderSide.none),
                               suffixIcon: Icon(Icons.search_sharp),
-                              hintText: 'Search Hostel'),
+                              hintText: 'Search hostel'),
                         ),
                       )
                     ],

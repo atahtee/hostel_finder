@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
               );
             } else if (snapshot.hasError) {
               return Center(
-                child: Text('Something went wrong!'),
+                child: Text('Something is wrong!'),
               );
             } else if (snapshot.hasData) {
               return HomePage();

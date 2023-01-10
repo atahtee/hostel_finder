@@ -54,7 +54,7 @@ class _LipaMpesaState extends State<LipaMpesa> {
                   foregroundColor: Colors.white, // foreground (text) color
                 ),
                 onPressed: () => print('pressed'),
-                child: const Text('Duke Othuol : 0703487740',
+                child: const Text('Duke Othuol : 0705487740',
               
                 ),
               ))

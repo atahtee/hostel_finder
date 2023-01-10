@@ -29,11 +29,11 @@ class _HomePageState extends State<HomePage> {
     "EASILY GET HOSTELS AROUND YOU",
     "QUALITY HOSTELS ARE OUR TEA AND BUTTER",
     "WE HELP YOU GET GOOD HOSTELS",
-    "WHAT ELSE WOULD YOU NEED?",
+    "WHAT ELSE WOULD YOU NEED??",
   ];
   final description = [
-    "Easily find affordable hostels with Hostel Finder"
-    "Hostel finder is a complete mobile application that enables youdto find your next hostel easily and conveniently",
+    "Easily find affordable hostels with Hostel Finder."
+    "Hostel finder enables you to find your next hostel easily and conveniently",
     "Hostel finder is a complete mobile application that helps you to find your next hostel easily",
     "Hostel finder is a complete mobile application that helps you to find your next hostel easily"
   ];
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                       color: AppColor.primaryColor),
                   alignment: Alignment.center,
                   child: Text(
-                    'CHECK IT OUT',
+                    'CHECK IT',
                     style: Theme.of(context)
                         .textTheme
                         .bodyLarge
