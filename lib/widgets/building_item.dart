@@ -89,7 +89,7 @@ class BuildingItem extends StatelessWidget {
                           ),
                           gradient: LinearGradient(
                             colors: [
-                              Colors.black,
+                              Colors.black87,
                               Colors.transparent,
                             ],
                             begin: Alignment.bottomCenter,
