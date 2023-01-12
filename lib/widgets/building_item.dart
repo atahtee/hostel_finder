@@ -63,7 +63,7 @@ class BuildingItem extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    top: 18,
+                    top: 16,
                     right: 18,
                     child: Container(
                       padding: const EdgeInsets.all(8),
