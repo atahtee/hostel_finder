@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-
 import '../widgets/background_wording.dart';
 
 class HomePage extends StatefulWidget {
@@ -33,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   ];
   final description = [
     "Easily find affordable hostels with Hostel Finder."
-    "Hostel finder enables you to find your next hostel easily and conveniently",
+        "Hostel finder enables you to find your next hostel easily and conveniently",
     "Hostel finder is a complete mobile application that helps you to find your next hostel easily",
     "Hostel finder is a complete mobile application that helps you to find your next hostel easily"
   ];
@@ -85,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                       color: AppColor.primaryColor),
                   alignment: Alignment.center,
                   child: Text(
-                    'CHECK IT',
+                    'Check it Out',
                     style: Theme.of(context)
                         .textTheme
                         .bodyLarge
@@ -119,3 +118,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
