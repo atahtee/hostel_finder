@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
     "Easily find affordable hostels with Hostel Finder."
     "Hostel finder enables you to find your next hostel easily and conveniently",
     "Hostel finder is a complete mobile application that helps you to find your next hostel easily",
-    "Hostel finder is a complete mobile application that helps you to find your next hostel easily"
+    "Hostel finder is a complete mobile application that helps you to find your next hostel"
   ];
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         children: [
           Positioned.fill(
-              child: PageView.builder(
+            child: PageView.builder(
             controller: controller,
             physics: NeverScrollableScrollPhysics(),
             itemCount: backgrounds.length,
@@ -52,7 +52,9 @@ class _HomePageState extends State<HomePage> {
               );
             }),
             onPageChanged: (index) {
-              SelectedPageNotifier.value = index;
+              if (mounted) {
+                SelectedPageNotifier.value = index;
+              }
             },
           )),
           Column(
@@ -66,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                     key: UniqueKey(),
                     title: titles[value],
                     description: description[value],
-                    duration: const Duration(milliseconds: 2000),
+                    duration: const Duration(milliseconds: 4000),
                   );
                 },
               )),
@@ -118,4 +120,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
