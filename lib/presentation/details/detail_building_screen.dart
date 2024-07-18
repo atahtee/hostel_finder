@@ -1,4 +1,4 @@
-import 'package:finderhostel/Pages/lipa_mpesa.dart';
+// import 'package:finderhostel/Pages/lipa_mpesa.dart';
 import 'package:finderhostel/Theme/app_color.dart';
 import 'package:finderhostel/presentation/building.dart';
 import 'package:flutter/cupertino.dart';
@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 
 import '../../Route/AppRouteName.dart';
-import '../../model/components/book_now_screen.dart';
+// import '../../model/components/book_now_screen.dart';
 
 class DetailBuildingScreen extends StatefulWidget {
   const DetailBuildingScreen({super.key});
