@@ -59,7 +59,7 @@ class _BackgroundWordingState extends State<BackgroundWording>
             Text(widget.title,
                 style: Theme.of(context)
                     .textTheme
-                    .headlineLarge
+                    .headlineMedium
                     ?.copyWith(color: AppColor.white)),
                     SizedBox(height: 16,),
                      Text(widget.description,
