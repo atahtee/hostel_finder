@@ -120,7 +120,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       size: 32,
                     ),
                     label: Text(
-                      'Sign In',
+                      'Sign Up',
                       style: TextStyle(fontSize: 24, color: Colors.white),
                     )),
               ),

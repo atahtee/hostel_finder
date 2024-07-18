@@ -9,9 +9,7 @@ class AppTheme {
   static ThemeData light = ThemeData(
     brightness: Brightness.light,
     primaryColor: AppColor.primaryColor,
-    backgroundColor: AppColor.backgroundGray,
     scaffoldBackgroundColor: AppColor.backgroundGray,
-    primarySwatch: AppColor.primarySwatch,
     textTheme: TextTheme(
       displayLarge: _textStyle.displayLarge,
       displayMedium: _textStyle.displayMedium,
@@ -28,15 +26,13 @@ class AppTheme {
       bodyLarge: _textStyle.bodyLarge,
       bodyMedium: _textStyle.bodyMedium,
       bodySmall: _textStyle.bodySmall,
-    ),
+    ), colorScheme: ColorScheme.fromSwatch(primarySwatch: AppColor.primarySwatch).copyWith(background: AppColor.backgroundGray),
   );
 
   static ThemeData dark = ThemeData(
     brightness: Brightness.dark,
-    backgroundColor: AppColor.backgroundBlack,
     scaffoldBackgroundColor: AppColor.backgroundBlack,
     primaryColor: AppColor.primaryColor,
-    primarySwatch: AppColor.primarySwatch,
     textTheme: TextTheme(
       displayLarge: _textStyle.displayLarge.copyWith(color: AppColor.white),
       displayMedium: _textStyle.displayMedium.copyWith(color: AppColor.white),
@@ -53,6 +49,6 @@ class AppTheme {
       bodyLarge: _textStyle.bodyLarge.copyWith(color: AppColor.white),
       bodyMedium: _textStyle.bodyMedium.copyWith(color: AppColor.white),
       bodySmall: _textStyle.bodySmall.copyWith(color: AppColor.white),
-    ),
+    ), colorScheme: ColorScheme.fromSwatch(primarySwatch: AppColor.primarySwatch).copyWith(background: AppColor.backgroundBlack),
   );
 }

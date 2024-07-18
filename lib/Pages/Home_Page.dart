@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                       color: AppColor.primaryColor),
                   alignment: Alignment.center,
                   child: Text(
-                    'CHECK IT',
+                    'CHECK IT OUT',
                     style: Theme.of(context)
                         .textTheme
                         .bodyLarge

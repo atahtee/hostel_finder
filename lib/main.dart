@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'Pages/Home_Page.dart';
+import 'Route/appRoute.dart';
 import 'Theme/app_theme.dart';
 import 'auth/auth_page.dart';
 
