@@ -1,21 +1,18 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class SignInScreen extends StatefulWidget {
   final VoidCallback onClickedSignUp;
-  const SignInScreen({super.key,
-  required this.onClickedSignUp
-  });
+
+  const SignInScreen({super.key, required this.onClickedSignUp});
 
   @override
-  State<SignInScreen> createState() => _SignInScreenState();
+  State<SignInScreen> createState() => _HostelFinderSignInScreenState();
 }
 
-class _SignInScreenState extends State<SignInScreen> {
+class _HostelFinderSignInScreenState extends State<SignInScreen> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
@@ -23,125 +20,115 @@ class _SignInScreenState extends State<SignInScreen> {
   void dispose() {
     emailController.dispose();
     passwordController.dispose();
-
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.white,
       body: SafeArea(
-        child: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(
-                height: 25,
-              ),
-              //Hello again!
-              const Text(
-                'Hello There',
+              Text(
+                'Welcome to Hostel Finder',
                 style: TextStyle(
+                  fontSize: 28.0,
                   fontWeight: FontWeight.bold,
-                  fontSize: 24,
+                  color: Colors.deepPurple[800],
                 ),
               ),
-              const SizedBox(
-                height: 10,
+              const SizedBox(height: 10.0),
+              Text(
+                'Please sign in to continue',
+                style: TextStyle(
+                  fontSize: 18.0,
+                  color: Colors.grey[600],
+                ),
               ),
-              const Text(
-                'Welcome to hostel finder',
-                style: TextStyle(fontSize: 20),
+              const SizedBox(height: 30.0),
+              TextField(
+                controller: emailController,
+                cursorColor: Colors.deepPurple,
+                decoration: InputDecoration(
+                  hintText: 'Enter your email',
+                  prefixIcon: Icon(
+                    Icons.email,
+                    color: Colors.deepPurple[800],
+                  ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    borderSide: BorderSide.none,
+                  ),
+                  filled: true,
+                  fillColor: Colors.grey[200],
+                ),
               ),
-              SizedBox(
-                height: 20,
+              const SizedBox(height: 20.0),
+              TextField(
+                controller: passwordController,
+                cursorColor: Colors.deepPurple,
+                obscureText: true,
+                decoration: InputDecoration(
+                  hintText: 'Enter your password',
+                  prefixIcon: Icon(
+                    Icons.lock,
+                    color: Colors.deepPurple[800],
+                  ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    borderSide: BorderSide.none,
+                  ),
+                  filled: true,
+                  fillColor: Colors.grey[200],
+                ),
               ),
-
-              //email textfield
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      border: Border.all(color: Colors.white),
-                      borderRadius: BorderRadius.circular(16)),
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: TextField(
-                      controller: emailController,
-                      cursorColor: Colors.white,
-                      textInputAction: TextInputAction.next,
-                      decoration: InputDecoration(
-                          border: InputBorder.none, hintText: 'Email'),
-                    ),
+              const SizedBox(height: 30.0),
+              ElevatedButton(
+                onPressed: signIn,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepPurple[800],
+                  minimumSize: const Size.fromHeight(50.0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                ),
+                child: const Text(
+                  'Sign In',
+                  style: TextStyle(
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
                 ),
               ),
-
-              SizedBox(
-                height: 10,
-              ),
-
-              //password textfield
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      border: Border.all(color: Colors.white),
-                      borderRadius: BorderRadius.circular(16)),
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: TextField(
-                      controller: passwordController,
-                      obscureText: true,
-                      decoration: InputDecoration(
-                          border: InputBorder.none, hintText: 'Password'),
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-
-              //sign in button
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurple[200],
-                      minimumSize: Size.fromHeight(50),
-                    ),
-                    onPressed: signIn,
-                    icon: Icon(
-                      Icons.lock_open,
-                      size: 32,
-                    ),
-                    label: Text(
-                      'Sign In',
-                      style: TextStyle(fontSize: 24, color: Colors.white),
-                    )),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-
-              // not a member?
-              RichText(
+              const SizedBox(height: 20.0),
+              Center(
+                child: RichText(
                   text: TextSpan(
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                      text: 'No account? ',
-                      children: [
-                    TextSpan(
+                    style: TextStyle(
+                      color: Colors.grey[600],
+                      fontSize: 16.0,
+                    ),
+                    text: 'Don\'t have an account? ',
+                    children: [
+                      TextSpan(
                         recognizer: TapGestureRecognizer()
                           ..onTap = widget.onClickedSignUp,
                         text: 'Sign Up',
                         style: TextStyle(
-                            decoration: TextDecoration.underline,
-                            color: Theme.of(context).colorScheme.secondary))
-                  ]))
+                          color: Colors.deepPurple[800],
+                          decoration: TextDecoration.underline,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
@@ -152,8 +139,9 @@ class _SignInScreenState extends State<SignInScreen> {
   Future signIn() async {
     try {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
-          email: emailController.text.trim(),
-          password: passwordController.text.trim());
+        email: emailController.text.trim(),
+        password: passwordController.text.trim(),
+      );
     } on FirebaseAuthException catch (e) {
       print(e);
     }

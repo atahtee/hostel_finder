@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
               IconButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return AddListing();
+                    return AddHostelPage();
                   }));
                 },
                 hoverColor: Colors.cyan[400],
@@ -103,13 +103,7 @@ class HomeScreen extends StatelessWidget {
                     "Near You",
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
-                  Text(
-                    "See All",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyMedium
-                        ?.copyWith(color: Colors.green[300]),
-                  ),
+                
                 ],
               ),
             ),

@@ -71,10 +71,7 @@ class BuildingItem extends StatelessWidget {
                         color: AppColor.white,
                         shape: BoxShape.circle,
                       ),
-                      child: const Icon(
-                        CupertinoIcons.bookmark,
-                        size: 20,
-                      ),
+                    
                     ),
                   ),
                   Positioned(

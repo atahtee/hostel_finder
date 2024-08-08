@@ -73,10 +73,7 @@ class _DetailBuildingScreenState extends State<DetailBuildingScreen> {
                           shape: BoxShape.circle,
                           color: AppColor.white,
                         ),
-                        child: const Icon(
-                          CupertinoIcons.bookmark,
-                          size: 24,
-                        ),
+                       
                       ),
                     )
                   ],
